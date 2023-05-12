@@ -1,6 +1,11 @@
-import { Slot } from "expo-router";
+import { Stack } from "expo-router";
 
-// this may not be needed
-export default function RootLayout() {
-  return <Slot />;
+export default function RootStack() {
+  return (
+    <Stack
+      screenOptions={{
+        headerTitleAlign: "center",
+      }}
+    />
+  );
 }
